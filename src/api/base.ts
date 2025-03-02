@@ -1,11 +1,40 @@
+/**
+ * @fileoverview Базовый класс для всех API модулей G-Engine.
+ * @module api/base
+ */
+
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { Token } from '../types';
 
+/**
+ * Базовый класс для всех API модулей.
+ * Предоставляет общую функциональность для работы с HTTP запросами и авторизацией.
+ */
 export class ApiBase {
+  /**
+   * HTTP клиент для выполнения запросов.
+   * @protected
+   */
   protected readonly client: AxiosInstance;
+  
+  /**
+   * Базовый URL API.
+   * @protected
+   */
   protected baseUrl: string;
+  
+  /**
+   * Токен авторизации.
+   * @protected
+   */
   protected token: string | null = null;
 
+  /**
+   * Создает новый экземпляр базового API.
+   * 
+   * @param {string} baseUrl - Базовый URL API (по умолчанию https://b2b-api.ggsel.com)
+   * @param {string} [token] - Токен авторизации (опционально)
+   */
   constructor(baseUrl: string = 'https://b2b-api.ggsel.com', token?: string) {
     this.baseUrl = baseUrl;
     if (token) {
@@ -30,26 +59,35 @@ export class ApiBase {
   }
 
   /**
-   * Устанавливает токен авторизации
-   * @param token Токен авторизации
+   * Устанавливает токен авторизации для API.
+   * Этот токен будет автоматически добавляться ко всем запросам.
+   * 
+   * @param {string} token - Токен авторизации
+   * @returns {void}
    */
   public setToken(token: string): void {
     this.token = token;
   }
 
   /**
-   * Очищает токен авторизации
+   * Очищает токен авторизации.
+   * После вызова этого метода запросы будут выполняться без авторизации.
+   * 
+   * @returns {void}
    */
   public clearToken(): void {
     this.token = null;
   }
 
   /**
-   * Выполняет GET запрос
-   * @param url URL запроса
-   * @param params Параметры запроса
-   * @param config Дополнительная конфигурация запроса
-   * @returns Промис с результатом запроса
+   * Выполняет GET запрос к API.
+   * 
+   * @template T - Тип возвращаемых данных
+   * @param {string} url - URL запроса (относительно базового URL API)
+   * @param {any} [params] - Параметры запроса (query parameters)
+   * @param {AxiosRequestConfig} [config] - Дополнительная конфигурация запроса
+   * @returns {Promise<T>} Промис с результатом запроса
+   * @protected
    */
   protected async get<T>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await this.client.get(url, {
@@ -60,11 +98,14 @@ export class ApiBase {
   }
 
   /**
-   * Выполняет POST запрос
-   * @param url URL запроса
-   * @param data Данные запроса
-   * @param config Дополнительная конфигурация запроса
-   * @returns Промис с результатом запроса
+   * Выполняет POST запрос к API.
+   * 
+   * @template T - Тип возвращаемых данных
+   * @param {string} url - URL запроса (относительно базового URL API)
+   * @param {any} [data] - Данные запроса (тело запроса)
+   * @param {AxiosRequestConfig} [config] - Дополнительная конфигурация запроса
+   * @returns {Promise<T>} Промис с результатом запроса
+   * @protected
    */
   protected async post<T>(url: string, data?: any, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await this.client.post(url, data, config);
@@ -72,11 +113,14 @@ export class ApiBase {
   }
 
   /**
-   * Выполняет PUT запрос
-   * @param url URL запроса
-   * @param data Данные запроса
-   * @param config Дополнительная конфигурация запроса
-   * @returns Промис с результатом запроса
+   * Выполняет PUT запрос к API.
+   * 
+   * @template T - Тип возвращаемых данных
+   * @param {string} url - URL запроса (относительно базового URL API)
+   * @param {any} [data] - Данные запроса (тело запроса)
+   * @param {AxiosRequestConfig} [config] - Дополнительная конфигурация запроса
+   * @returns {Promise<T>} Промис с результатом запроса
+   * @protected
    */
   protected async put<T>(url: string, data?: any, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await this.client.put(url, data, config);
@@ -84,10 +128,13 @@ export class ApiBase {
   }
 
   /**
-   * Выполняет DELETE запрос
-   * @param url URL запроса
-   * @param config Дополнительная конфигурация запроса
-   * @returns Промис с результатом запроса
+   * Выполняет DELETE запрос к API.
+   * 
+   * @template T - Тип возвращаемых данных
+   * @param {string} url - URL запроса (относительно базового URL API)
+   * @param {AxiosRequestConfig} [config] - Дополнительная конфигурация запроса
+   * @returns {Promise<T>} Промис с результатом запроса
+   * @protected
    */
   protected async delete<T>(url: string, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await this.client.delete(url, config);

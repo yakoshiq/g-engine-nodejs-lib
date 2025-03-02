@@ -2,6 +2,8 @@
 
 TypeScript клиент для работы с G-Engine API.
 
+Официальный сайт проекта: [G-Engine](https://g-engine.net/)
+
 ## Установка
 
 ```bash
@@ -59,9 +61,15 @@ const users = await client.users.getUsers({
 ### Работа с платежами
 
 ```typescript
+import { generateTransactionId } from 'g-engine-api';
+
+// Генерация уникального идентификатора транзакции
+const transactionId = generateTransactionId();
+console.log(`Сгенерированный transaction_id: ${transactionId}`);
+
 // Создание и верификация платежа
 const verifyResult = await client.payments.verifyPayment({
-  transaction_id: 'your-transaction-id',
+  transaction_id: transactionId,
   service_id: 1,
   account: 'user-account',
   amount: 100,
@@ -70,11 +78,11 @@ const verifyResult = await client.payments.verifyPayment({
 
 // Выполнение платежа
 const executeResult = await client.payments.executePayment({
-  transaction_id: 'your-transaction-id'
+  transaction_id: transactionId
 });
 
 // Получение статуса платежа
-const paymentStatus = await client.payments.getPaymentStatus('your-transaction-id');
+const paymentStatus = await client.payments.getPaymentStatus(transactionId);
 ```
 
 ### Работа с транзакциями
@@ -97,6 +105,22 @@ const currencyRate = await client.currencies.getCurrencyRate(
   RateSource.cb_rf,
   CurrencyPair.USD_RUB
 );
+```
+
+### Утилиты
+
+Библиотека предоставляет набор полезных утилит:
+
+```typescript
+import { generateTransactionId, isValidTransactionId } from 'g-engine-api';
+
+// Генерация уникального идентификатора транзакции
+const transactionId = generateTransactionId();
+console.log(`Сгенерированный transaction_id: ${transactionId}`);
+
+// Проверка валидности идентификатора транзакции
+const isValid = isValidTransactionId(transactionId);
+console.log(`Идентификатор транзакции валиден: ${isValid}`);
 ```
 
 ## Типы данных

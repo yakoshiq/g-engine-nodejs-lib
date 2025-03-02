@@ -1,5 +1,4 @@
-import { GEngineClient, StatusCode } from '../../src';
-import { v4 as uuidv4 } from 'uuid';
+import { GEngineClient, StatusCode, generateTransactionId } from '../../src';
 
 /**
  * Пример работы с платежами
@@ -16,8 +15,8 @@ async function paymentsExample() {
     });
     console.log('Успешная аутентификация!');
 
-    // Генерируем уникальный идентификатор транзакции
-    const transactionId = uuidv4();
+    // Генерируем уникальный идентификатор транзакции с помощью нашей утилиты
+    const transactionId = generateTransactionId();
     console.log('Идентификатор транзакции:', transactionId);
 
     // Создаем и верифицируем платеж

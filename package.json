@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/yakoshiq/g-engine-nodejs-lib#readme",
   "dependencies": {
-    "axios": "^1.8.1"
+    "axios": "^1.8.1",
+    "g-engine-api": "file:"
   },
   "devDependencies": {
     "@types/node": "^22.13.8",
