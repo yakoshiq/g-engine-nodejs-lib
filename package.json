@@ -1,0 +1,40 @@
+{
+  "name": "g-engine-api",
+  "version": "0.1.0",
+  "description": "TypeScript клиент для G-Engine API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "g-engine",
+    "api",
+    "client",
+    "typescript"
+  ],
+  "author": "yakoshiq",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakoshiq/g-engine-nodejs-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yakoshiq/g-engine-nodejs-lib/issues"
+  },
+  "homepage": "https://github.com/yakoshiq/g-engine-nodejs-lib#readme",
+  "dependencies": {
+    "axios": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
