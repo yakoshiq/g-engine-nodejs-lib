@@ -2,6 +2,8 @@
 
 TypeScript клиент для работы с G-Engine API.
 
+[![Тестирование](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml/badge.svg)](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml)
+
 Официальный сайт проекта: [G-Engine](https://g-engine.net/)
 
 ## Установка
@@ -19,6 +21,28 @@ npm install g-engine-api
 ```bash
 npm install
 ```
+
+### Тестирование
+
+Библиотека покрыта модульными тестами с использованием Jest. Для запуска тестов выполните:
+
+```bash
+npm test
+```
+
+Для запуска тестов в режиме наблюдения (автоматический перезапуск при изменении файлов):
+
+```bash
+npm run test:watch
+```
+
+Для генерации отчета о покрытии кода тестами:
+
+```bash
+npm run test:coverage
+```
+
+Тесты автоматически запускаются в GitHub Actions при каждом пуше и pull request.
 
 ### Линтинг и форматирование
 
