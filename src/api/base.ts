@@ -4,7 +4,6 @@
  */
 
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { Token } from '../types';
 
 /**
  * Базовый класс для всех API модулей.
@@ -16,13 +15,13 @@ export class ApiBase {
    * @protected
    */
   protected readonly client: AxiosInstance;
-  
+
   /**
    * Базовый URL API.
    * @protected
    */
   protected baseUrl: string;
-  
+
   /**
    * Токен авторизации.
    * @protected
@@ -31,7 +30,7 @@ export class ApiBase {
 
   /**
    * Создает новый экземпляр базового API.
-   * 
+   *
    * @param {string} baseUrl - Базовый URL API (по умолчанию https://b2b-api.ggsel.com)
    * @param {string} [token] - Токен авторизации (опционально)
    */
@@ -45,12 +44,12 @@ export class ApiBase {
       baseURL: `${this.baseUrl}/api/v2`,
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json',
       },
     });
 
     // Добавляем перехватчик для автоматического добавления токена к запросам
-    this.client.interceptors.request.use((config) => {
+    this.client.interceptors.request.use(config => {
       if (this.token) {
         config.headers.Authorization = `Bearer ${this.token}`;
       }
@@ -61,7 +60,7 @@ export class ApiBase {
   /**
    * Устанавливает токен авторизации для API.
    * Этот токен будет автоматически добавляться ко всем запросам.
-   * 
+   *
    * @param {string} token - Токен авторизации
    * @returns {void}
    */
@@ -72,7 +71,7 @@ export class ApiBase {
   /**
    * Очищает токен авторизации.
    * После вызова этого метода запросы будут выполняться без авторизации.
-   * 
+   *
    * @returns {void}
    */
   public clearToken(): void {
@@ -81,7 +80,7 @@ export class ApiBase {
 
   /**
    * Выполняет GET запрос к API.
-   * 
+   *
    * @template T - Тип возвращаемых данных
    * @param {string} url - URL запроса (относительно базового URL API)
    * @param {any} [params] - Параметры запроса (query parameters)
@@ -99,7 +98,7 @@ export class ApiBase {
 
   /**
    * Выполняет POST запрос к API.
-   * 
+   *
    * @template T - Тип возвращаемых данных
    * @param {string} url - URL запроса (относительно базового URL API)
    * @param {any} [data] - Данные запроса (тело запроса)
@@ -114,7 +113,7 @@ export class ApiBase {
 
   /**
    * Выполняет PUT запрос к API.
-   * 
+   *
    * @template T - Тип возвращаемых данных
    * @param {string} url - URL запроса (относительно базового URL API)
    * @param {any} [data] - Данные запроса (тело запроса)
@@ -129,7 +128,7 @@ export class ApiBase {
 
   /**
    * Выполняет DELETE запрос к API.
-   * 
+   *
    * @template T - Тип возвращаемых данных
    * @param {string} url - URL запроса (относительно базового URL API)
    * @param {AxiosRequestConfig} [config] - Дополнительная конфигурация запроса
@@ -140,4 +139,4 @@ export class ApiBase {
     const response: AxiosResponse<T> = await this.client.delete(url, config);
     return response.data;
   }
-} 
+}

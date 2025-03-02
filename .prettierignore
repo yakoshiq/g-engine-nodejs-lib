@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+.github/
+*.js.map
+*.d.ts
+package-lock.json 

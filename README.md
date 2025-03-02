@@ -10,6 +10,47 @@ TypeScript клиент для работы с G-Engine API.
 npm install g-engine-api
 ```
 
+## Разработка
+
+### Настройка окружения
+
+Для разработки библиотеки необходимо установить зависимости:
+
+```bash
+npm install
+```
+
+### Линтинг и форматирование
+
+Проект использует ESLint и Prettier для обеспечения качества кода:
+
+```bash
+# Проверка кода линтером
+npm run lint
+
+# Автоматическое исправление проблем линтера
+npm run lint:fix
+
+# Форматирование кода
+npm run format
+
+# Проверка форматирования
+npm run format:check
+```
+
+### Сборка
+
+```bash
+npm run build
+```
+
+### Публикация
+
+```bash
+npm version patch # или minor, или major
+npm publish
+```
+
 ## Использование
 
 ### Инициализация клиента
@@ -30,7 +71,7 @@ const client = new GEngineClient('https://b2b-api.ggsel.com', 'your-token');
 // Авторизация
 const token = await client.auth.login({
   login: 'your-login',
-  password: 'your-password'
+  password: 'your-password',
 });
 
 // Установка токена
@@ -54,7 +95,7 @@ const users = await client.users.getUsers({
   limit: 10,
   offset: 0,
   sort_by: 'created_at',
-  sort_order: 'desc'
+  sort_order: 'desc',
 });
 ```
 
@@ -73,12 +114,12 @@ const verifyResult = await client.payments.verifyPayment({
   service_id: 1,
   account: 'user-account',
   amount: 100,
-  currency: 'RUB'
+  currency: 'RUB',
 });
 
 // Выполнение платежа
 const executeResult = await client.payments.executePayment({
-  transaction_id: transactionId
+  transaction_id: transactionId,
 });
 
 // Получение статуса платежа
@@ -93,7 +134,7 @@ const transactions = await client.transactions.getTransactions({
   limit: 10,
   offset: 0,
   sort_by: 'date',
-  sort_order: 'desc'
+  sort_order: 'desc',
 });
 ```
 
@@ -143,4 +184,4 @@ import {
 
 ## Лицензия
 
-MIT 
+MIT

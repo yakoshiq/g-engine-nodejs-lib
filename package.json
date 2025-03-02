@@ -1,12 +1,16 @@
 {
   "name": "g-engine-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript клиент для G-Engine API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
@@ -32,6 +36,13 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.8",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-jsdoc": "^50.6.3",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },

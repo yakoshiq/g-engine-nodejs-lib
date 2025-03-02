@@ -7,7 +7,7 @@ export enum UserRole {
   Partner_Manager = 'Partner_Manager',
   Project_Manager = 'Project_Manager',
   Administrator = 'Administrator',
-  Boss_Of_This_Gym = 'Boss_Of_This_Gym'
+  Boss_Of_This_Gym = 'Boss_Of_This_Gym',
 }
 
 export enum StatusCode {
@@ -20,17 +20,17 @@ export enum StatusCode {
   PURCHASE_NOT_FOUND = 'PURCHASE_NOT_FOUND',
   REQUEST_ACCEPTED = 'REQUEST_ACCEPTED',
   CALCULATION_ERROR = 'CALCULATION_ERROR',
-  TOP_UP_ERROR = 'TOP_UP_ERROR'
+  TOP_UP_ERROR = 'TOP_UP_ERROR',
 }
 
 export enum RateSource {
   cb_rf = 'cb_rf',
-  steam = 'steam'
+  steam = 'steam',
 }
 
 export enum CurrencyPair {
   USD_RUB = 'USD:RUB',
-  EUR_RUB = 'EUR:RUB'
+  EUR_RUB = 'EUR:RUB',
 }
 
 // Базовые интерфейсы
@@ -210,4 +210,4 @@ export interface CurrencyRead {
   source: string;
   pair: string;
   currency_rate: string;
-} 
+}

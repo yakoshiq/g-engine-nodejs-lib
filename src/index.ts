@@ -22,21 +22,21 @@ export * from './utils';
 /**
  * Основной класс клиента G-Engine API.
  * Предоставляет доступ ко всем API модулям и управление авторизацией.
- * 
+ *
  * @example
  * ```typescript
  * // Создание клиента без токена
  * const client = new GEngineClient();
- * 
+ *
  * // Создание клиента с токеном
  * const client = new GEngineClient('https://b2b-api.ggsel.com', 'your-token');
- * 
+ *
  * // Авторизация
  * const token = await client.auth.login({
  *   login: 'your-login',
  *   password: 'your-password'
  * });
- * 
+ *
  * // Установка токена
  * client.setToken(token.access_token);
  * ```
@@ -74,7 +74,7 @@ export class GEngineClient {
 
   /**
    * Создает новый экземпляр клиента G-Engine API.
-   * 
+   *
    * @param {string} baseUrl - Базовый URL API (по умолчанию https://b2b-api.ggsel.com)
    * @param {string} [token] - Токен авторизации (опционально)
    */
@@ -89,7 +89,7 @@ export class GEngineClient {
   /**
    * Устанавливает токен авторизации для всех API модулей.
    * Используется после успешной авторизации для последующих запросов.
-   * 
+   *
    * @param {string} token - Токен авторизации
    * @returns {void}
    */
@@ -104,7 +104,7 @@ export class GEngineClient {
   /**
    * Очищает токен авторизации для всех API модулей.
    * Используется при выходе из системы.
-   * 
+   *
    * @returns {void}
    */
   public clearToken(): void {
@@ -114,4 +114,4 @@ export class GEngineClient {
     this.transactions.clearToken();
     this.currencies.clearToken();
   }
-} 
+}

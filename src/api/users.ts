@@ -8,7 +8,7 @@ import { UserMe, UserBalance, UserBalanceObserver, UserReadObserver, UserRole } 
 
 /**
  * Параметры для получения списка пользователей.
- * 
+ *
  * @interface GetUsersParams
  * @property {number} [limit] - Максимальное количество пользователей в ответе
  * @property {number} [offset] - Смещение для пагинации
@@ -35,12 +35,12 @@ export interface GetUsersParams {
 /**
  * API для работы с пользователями.
  * Предоставляет методы для получения информации о пользователях и их балансе.
- * 
+ *
  * @example
  * ```typescript
  * // Создание экземпляра API
  * const usersApi = new UsersApi('https://b2b-api.ggsel.com', 'your-token');
- * 
+ *
  * // Получение данных текущего пользователя
  * const currentUser = await usersApi.getCurrentUser();
  * console.log(`Текущий пользователь: ${currentUser.name}`);
@@ -49,9 +49,9 @@ export interface GetUsersParams {
 export class UsersApi extends ApiBase {
   /**
    * Получает данные текущего авторизованного пользователя.
-   * 
+   *
    * @returns {Promise<UserMe>} Промис с данными текущего пользователя
-   * 
+   *
    * @example
    * ```typescript
    * const currentUser = await usersApi.getCurrentUser();
@@ -67,13 +67,13 @@ export class UsersApi extends ApiBase {
   /**
    * Получает информацию о балансе текущего пользователя.
    * В зависимости от роли пользователя, метод может возвращать разные типы данных.
-   * 
+   *
    * @returns {Promise<UserBalance | UserBalanceObserver[]>} Промис с балансом пользователя
-   * 
+   *
    * @example
    * ```typescript
    * const balance = await usersApi.getUserBalance();
-   * 
+   *
    * if (Array.isArray(balance)) {
    *   // Для пользователя с ролью Observer
    *   balance.forEach(item => {
@@ -93,10 +93,10 @@ export class UsersApi extends ApiBase {
   /**
    * Получает список пользователей с возможностью фильтрации и пагинации.
    * Этот метод доступен только для пользователей с ролью Observer.
-   * 
+   *
    * @param {GetUsersParams} [params] - Параметры запроса
    * @returns {Promise<UserReadObserver[]>} Промис со списком пользователей
-   * 
+   *
    * @example
    * ```typescript
    * // Получение списка пользователей с ролью User
@@ -105,7 +105,7 @@ export class UsersApi extends ApiBase {
    *   offset: 0,
    *   role_name: UserRole.User
    * });
-   * 
+   *
    * // Поиск пользователей по логину
    * const foundUsers = await usersApi.getUsers({
    *   search_field: 'login',
@@ -116,4 +116,4 @@ export class UsersApi extends ApiBase {
   public async getUsers(params?: GetUsersParams): Promise<UserReadObserver[]> {
     return this.get<UserReadObserver[]>('/user', params);
   }
-} 
+}
