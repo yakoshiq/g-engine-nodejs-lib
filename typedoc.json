@@ -21,5 +21,33 @@
     "private": false,
     "inherited": true,
     "external": false
-  }
+  },
+  "categoryOrder": [
+    "API",
+    "Клиенты",
+    "Аутентификация",
+    "Пользователи",
+    "Платежи",
+    "Транзакции",
+    "Валюты",
+    "Утилиты",
+    "Типы",
+    "Перечисления",
+    "*"
+  ],
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true,
+    "includeFolders": true
+  },
+  "kindSortOrder": [
+    "Project",
+    "Module",
+    "Class",
+    "Interface",
+    "Enum",
+    "Function",
+    "Variable",
+    "TypeAlias"
+  ]
 }

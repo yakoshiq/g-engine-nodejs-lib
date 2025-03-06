@@ -3,10 +3,23 @@ name: Documentation
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'typedoc.json'
+      - 'package.json'
+      - '.github/workflows/docs.yml'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'typedoc.json'
+      - 'package.json'
+      - '.github/workflows/docs.yml'
   # Позволяет запускать этот workflow вручную из вкладки Actions
   workflow_dispatch:
+  # Запуск по расписанию (раз в неделю в воскресенье)
+  schedule:
+    - cron: '0 0 * * 0'
 
 jobs:
   build-and-deploy:
@@ -19,6 +32,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Полная история для правильных версий
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,15 +41,84 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      # Кэширование node_modules для ускорения сборки
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate documentation
-        run: npm run docs
+      # Проверка документации на наличие ошибок и предупреждений
+      - name: Check documentation quality
+        id: doc_check
+        run: |
+          # Создаем временный файл для вывода предупреждений
+          mkdir -p tmp
+          npm run docs 2> tmp/typedoc_warnings.txt
+
+          # Подсчитываем количество предупреждений
+          WARNING_COUNT=$(grep -c "\[warning\]" tmp/typedoc_warnings.txt || true)
+          ERROR_COUNT=$(grep -c "\[error\]" tmp/typedoc_warnings.txt || true)
+
+          echo "Найдено $WARNING_COUNT предупреждений и $ERROR_COUNT ошибок в документации"
+          echo "warning_count=$WARNING_COUNT" >> $GITHUB_OUTPUT
+          echo "error_count=$ERROR_COUNT" >> $GITHUB_OUTPUT
+
+          # Сохраняем предупреждения для последующего шага
+          cat tmp/typedoc_warnings.txt
+
+          # Завершаем с ошибкой только если есть ошибки (не предупреждения)
+          if [ "$ERROR_COUNT" -gt 0 ]; then
+            exit 1
+          fi
+
+      # Создаем .nojekyll файл для правильной обработки файлов с подчеркиванием
+      - name: Create .nojekyll file
+        run: touch docs/.nojekyll
+
+      # Создаем файл с версией и датой обновления
+      - name: Add version info
+        run: |
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
+          echo "<div class='version-info'>Версия: $PACKAGE_VERSION | Обновлено: $CURRENT_DATE</div>" > docs/version-info.html
+
+          # Добавляем стили для отображения информации о версии
+          echo "<style>.version-info { position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #666; }</style>" >> docs/version-info.html
 
       - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: docs
           branch: gh-pages
           clean: true
+          commit-message: "docs: обновление документации v${{ steps.doc_check.outputs.warning_count }} предупреждений [skip ci]"
+
+      # Комментарий в PR с результатами проверки документации
+      - name: Comment PR with documentation status
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const warnings = ${{ steps.doc_check.outputs.warning_count }};
+            const errors = ${{ steps.doc_check.outputs.error_count }};
+
+            let status = '✅ Документация сгенерирована без ошибок';
+            if (warnings > 0 || errors > 0) {
+              status = warnings > 0 ? `⚠️ Найдено ${warnings} предупреждений` : '';
+              status += errors > 0 ? `❌ Найдено ${errors} ошибок` : '';
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## Статус документации\n\n${status}\n\nПросмотрите предупреждения в логах сборки для улучшения качества документации.`
+            });

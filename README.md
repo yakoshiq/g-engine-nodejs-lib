@@ -13,11 +13,26 @@ TypeScript клиент для работы с G-Engine API.
 
 ### Основные разделы
 
-- [Модули](https://yakoshiq.github.io/g-engine-nodejs-lib/index.html) - главная страница документации
-- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/GEngineClient.html) - документация по классам
-- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/types/Token.html) - описание типов и интерфейсов
+- [Главная](https://yakoshiq.github.io/g-engine-nodejs-lib/index.html) - обзор библиотеки
+- [Модули](https://yakoshiq.github.io/g-engine-nodejs-lib/modules.html) - полное описание API
+- [Иерархия](https://yakoshiq.github.io/g-engine-nodejs-lib/hierarchy.html) - иерархия классов
 
-### Локальная генерация документации
+### Категории
+
+- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/GEngineClient.html)
+
+  - [GEngineClient](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/GEngineClient.html) - основной клиент
+  - [AuthApi](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/AuthApi.html) - API аутентификации
+  - [UsersApi](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/UsersApi.html) - API пользователей
+  - [PaymentsApi](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/PaymentsApi.html) - API платежей
+  - [TransactionsApi](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/TransactionsApi.html) - API транзакций
+  - [CurrenciesApi](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/CurrenciesApi.html) - API валют
+
+- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/interfaces/Token.html) - типы данных
+- [Перечисления](https://yakoshiq.github.io/g-engine-nodejs-lib/enums/StatusCode.html) - константы и коды статусов
+- [Функции](https://yakoshiq.github.io/g-engine-nodejs-lib/functions/generateTransactionId.html) - утилиты
+
+### Локальная работа с документацией
 
 ```bash
 # Сгенерировать документацию
@@ -28,6 +43,9 @@ npm run docs:serve
 
 # Автоматическая генерация при изменениях
 npm run docs:watch
+
+# Проверка документации на ошибки (без генерации файлов)
+npm run docs:check
 ```
 
 ## Установка
