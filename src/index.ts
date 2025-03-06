@@ -84,6 +84,9 @@ export class GEngineClient {
     this.payments = new PaymentsApi(baseUrl, token);
     this.transactions = new TransactionsApi(baseUrl, token);
     this.currencies = new CurrenciesApi(baseUrl, token);
+
+    // Устанавливаем ссылку на родительский клиент для AuthApi
+    this.auth.setParentClient(this);
   }
 
   /**

@@ -1,5 +1,6 @@
 import MockAdapter from 'axios-mock-adapter';
 import { AuthApi } from '../../src/api/auth';
+import { Token } from '../../src/types';
 
 describe('AuthApi', () => {
   let api: AuthApi;
@@ -23,10 +24,9 @@ describe('AuthApi', () => {
         password: 'test-password',
       };
 
-      const tokenResponse = {
+      const tokenResponse: Token = {
         access_token: 'test-access-token',
         token_type: 'Bearer',
-        expires_in: 3600,
       };
 
       mock.onPost('/auth/token', credentials).reply(200, tokenResponse);
@@ -43,6 +43,33 @@ describe('AuthApi', () => {
 
       // @ts-ignore - вызываем protected метод для тестирования
       await api['get']('/test');
+    });
+
+    it('должен устанавливать токен для родительского клиента', async () => {
+      const credentials = {
+        login: 'test-user',
+        password: 'test-password',
+      };
+
+      const tokenResponse: Token = {
+        access_token: 'test-access-token',
+        token_type: 'Bearer',
+      };
+
+      mock.onPost('/auth/token', credentials).reply(200, tokenResponse);
+
+      // Создаем мок родительского клиента
+      const parentClient = {
+        setToken: jest.fn(),
+      };
+
+      // Устанавливаем родительский клиент
+      api.setParentClient(parentClient);
+
+      await api.login(credentials);
+
+      // Проверяем, что токен был установлен для родительского клиента
+      expect(parentClient.setToken).toHaveBeenCalledWith(tokenResponse.access_token);
     });
 
     it('должен выбрасывать ошибку при неверных учетных данных', async () => {
@@ -68,10 +95,9 @@ describe('AuthApi', () => {
         password: 'test-password',
       };
 
-      const tokenResponse = {
+      const tokenResponse: Token = {
         access_token: 'test-access-token',
         token_type: 'Bearer',
-        expires_in: 3600,
       };
 
       mock.onPost('/auth/token', credentials).reply(200, tokenResponse);

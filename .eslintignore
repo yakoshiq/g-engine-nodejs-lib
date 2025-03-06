@@ -3,4 +3,4 @@ dist/
 coverage/
 .github/
 *.js.map
-*.d.ts 
+*.d.ts

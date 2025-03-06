@@ -45,6 +45,9 @@ export class ApiBase {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
+        Connection: 'keep-alive',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Cache-Control': 'no-cache',
       },
     });
 

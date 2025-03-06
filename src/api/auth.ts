@@ -27,6 +27,20 @@ import { Token, UserAuth } from '../types';
  */
 export class AuthApi extends ApiBase {
   /**
+   * Ссылка на родительский клиент G-Engine.
+   * @private
+   */
+  private parentClient?: { setToken: (token: string) => void };
+
+  /**
+   * Устанавливает ссылку на родительский клиент.
+   * @param client - Родительский клиент G-Engine
+   */
+  public setParentClient(client: { setToken: (token: string) => void }): void {
+    this.parentClient = client;
+  }
+
+  /**
    * Выполняет авторизацию пользователя и получает токен доступа.
    * После успешной авторизации токен автоматически устанавливается для всех последующих запросов.
    *
@@ -44,7 +58,15 @@ export class AuthApi extends ApiBase {
    */
   public async login(credentials: UserAuth): Promise<Token> {
     const token = await this.post<Token>('/auth/token', credentials);
+
+    // Устанавливаем токен для текущего API модуля
     this.setToken(token.access_token);
+
+    // Если есть родительский клиент, устанавливаем токен для всех API модулей
+    if (this.parentClient) {
+      this.parentClient.setToken(token.access_token);
+    }
+
     return token;
   }
 
