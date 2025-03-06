@@ -6,7 +6,7 @@
 
 # Interface: SystemStoreBase
 
-Defined in: [types/index.ts:172](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L172)
+Defined in: [types/index.ts:172](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L172)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:172](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **id**: `number`
 
-Defined in: [types/index.ts:173](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L173)
+Defined in: [types/index.ts:173](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L173)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:173](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **name**: `string`
 
-Defined in: [types/index.ts:174](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L174)
+Defined in: [types/index.ts:174](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L174)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [types/index.ts:174](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **color**: `string`
 
-Defined in: [types/index.ts:175](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L175)
+Defined in: [types/index.ts:175](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L175)

@@ -11,6 +11,29 @@
 
 Официальный сайт проекта: [G-Engine](https://g-engine.net/)
 
+## Документация
+
+Полная документация API доступна на [GitHub Pages](https://yakoshiq.github.io/g-engine-nodejs-lib/).
+
+### Разделы документации
+
+- [API Reference](https://yakoshiq.github.io/g-engine-nodejs-lib/modules.html) - полное описание API библиотеки
+- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes.html) - документация по классам
+- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/interfaces.html) - описание типов и интерфейсов
+
+### Локальная генерация документации
+
+```bash
+# Сгенерировать документацию
+npm run docs
+
+# Запустить документацию локально
+npm run docs:serve
+
+# Автоматическая генерация при изменениях
+npm run docs:watch
+```
+
 ## Установка
 
 ```bash
@@ -138,23 +161,6 @@ import {
   TransactionRead,
   // и другие...
 } from 'g-engine-api';
-```
-
-## Документация
-
-Полная документация API доступна на [GitHub Pages](https://yakoshiq.github.io/g-engine-nodejs-lib/).
-
-### Локальная генерация документации
-
-```bash
-# Сгенерировать документацию
-npm run docs
-
-# Запустить документацию локально
-npm run docs:serve
-
-# Автоматическая генерация при изменениях
-npm run docs:watch
 ```
 
 ## Разработка

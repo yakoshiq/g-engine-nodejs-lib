@@ -6,7 +6,7 @@
 
 # Interface: ResponseBase\<T\>
 
-Defined in: [types/index.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L37)
+Defined in: [types/index.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L37)
 
 ## Type Parameters
 
@@ -18,7 +18,7 @@ Defined in: [types/index.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **success**: `boolean`
 
-Defined in: [types/index.ts:38](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L38)
+Defined in: [types/index.ts:38](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L38)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/index.ts:38](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **message**: `string`
 
-Defined in: [types/index.ts:39](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L39)
+Defined in: [types/index.ts:39](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L39)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/index.ts:39](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > `optional` **data**: `null` \| `T`
 
-Defined in: [types/index.ts:40](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L40)
+Defined in: [types/index.ts:40](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L40)

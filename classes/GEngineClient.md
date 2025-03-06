@@ -6,7 +6,7 @@
 
 # Class: GEngineClient
 
-Defined in: [index.ts:44](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L44)
+Defined in: [index.ts:44](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L44)
 
 Основной класс клиента G-Engine API.
 Предоставляет доступ ко всем API модулям и управление авторизацией.
@@ -36,7 +36,7 @@ client.setToken(token.access_token);
 
 > **new GEngineClient**(`baseUrl`, `token`?): [`GEngineClient`](GEngineClient.md)
 
-Defined in: [index.ts:81](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L81)
+Defined in: [index.ts:81](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L81)
 
 Создает новый экземпляр клиента G-Engine API.
 
@@ -64,7 +64,7 @@ Defined in: [index.ts:81](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6
 
 > `readonly` **auth**: [`AuthApi`](AuthApi.md)
 
-Defined in: [index.ts:49](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L49)
+Defined in: [index.ts:49](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L49)
 
 API для работы с аутентификацией.
 Предоставляет методы для входа и выхода из системы.
@@ -75,7 +75,7 @@ API для работы с аутентификацией.
 
 > `readonly` **users**: [`UsersApi`](UsersApi.md)
 
-Defined in: [index.ts:55](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L55)
+Defined in: [index.ts:55](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L55)
 
 API для работы с пользователями.
 Предоставляет методы для получения информации о пользователях и их балансе.
@@ -86,7 +86,7 @@ API для работы с пользователями.
 
 > `readonly` **payments**: [`PaymentsApi`](PaymentsApi.md)
 
-Defined in: [index.ts:61](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L61)
+Defined in: [index.ts:61](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L61)
 
 API для работы с платежами.
 Предоставляет методы для создания, верификации и выполнения платежей.
@@ -97,7 +97,7 @@ API для работы с платежами.
 
 > `readonly` **transactions**: [`TransactionsApi`](TransactionsApi.md)
 
-Defined in: [index.ts:67](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L67)
+Defined in: [index.ts:67](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L67)
 
 API для работы с транзакциями.
 Предоставляет методы для получения информации о транзакциях.
@@ -108,7 +108,7 @@ API для работы с транзакциями.
 
 > `readonly` **currencies**: [`CurrenciesApi`](CurrenciesApi.md)
 
-Defined in: [index.ts:73](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L73)
+Defined in: [index.ts:73](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L73)
 
 API для работы с валютами.
 Предоставляет методы для получения курсов валют.
@@ -119,7 +119,7 @@ API для работы с валютами.
 
 > **setToken**(`token`): `void`
 
-Defined in: [index.ts:99](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L99)
+Defined in: [index.ts:99](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L99)
 
 Устанавливает токен авторизации для всех API модулей.
 Используется после успешной авторизации для последующих запросов.
@@ -142,7 +142,7 @@ Defined in: [index.ts:99](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6
 
 > **clearToken**(): `void`
 
-Defined in: [index.ts:113](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/index.ts#L113)
+Defined in: [index.ts:113](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/index.ts#L113)
 
 Очищает токен авторизации для всех API модулей.
 Используется при выходе из системы.

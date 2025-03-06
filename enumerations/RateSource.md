@@ -6,7 +6,7 @@
 
 # Enumeration: RateSource
 
-Defined in: [types/index.ts:26](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L26)
+Defined in: [types/index.ts:26](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L26)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:26](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **cb\_rf**: `"cb_rf"`
 
-Defined in: [types/index.ts:27](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L27)
+Defined in: [types/index.ts:27](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L27)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [types/index.ts:27](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **steam**: `"steam"`
 
-Defined in: [types/index.ts:28](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L28)
+Defined in: [types/index.ts:28](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L28)

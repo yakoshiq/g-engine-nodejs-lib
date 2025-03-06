@@ -6,7 +6,7 @@
 
 # Interface: PaymentResponse
 
-Defined in: [types/index.ts:131](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L131)
+Defined in: [types/index.ts:131](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L131)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:131](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **transaction\_id**: `string`
 
-Defined in: [types/index.ts:132](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L132)
+Defined in: [types/index.ts:132](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L132)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:132](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **amount\_rub**: `string`
 
-Defined in: [types/index.ts:133](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L133)
+Defined in: [types/index.ts:133](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L133)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types/index.ts:133](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **amount\_usd**: `string`
 
-Defined in: [types/index.ts:134](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L134)
+Defined in: [types/index.ts:134](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L134)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [types/index.ts:134](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **account**: `string`
 
-Defined in: [types/index.ts:135](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L135)
+Defined in: [types/index.ts:135](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L135)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [types/index.ts:135](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **date**: `string`
 
-Defined in: [types/index.ts:136](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L136)
+Defined in: [types/index.ts:136](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L136)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [types/index.ts:136](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **status**: `string`
 
-Defined in: [types/index.ts:137](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L137)
+Defined in: [types/index.ts:137](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L137)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [types/index.ts:137](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **status\_code**: [`StatusCode`](../enumerations/StatusCode.md)
 
-Defined in: [types/index.ts:138](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L138)
+Defined in: [types/index.ts:138](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L138)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [types/index.ts:138](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **issue\_date**: `string`
 
-Defined in: [types/index.ts:139](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L139)
+Defined in: [types/index.ts:139](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L139)

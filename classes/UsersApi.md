@@ -6,7 +6,7 @@
 
 # Class: UsersApi
 
-Defined in: [api/users.ts:49](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/users.ts#L49)
+Defined in: [api/users.ts:49](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/users.ts#L49)
 
 API для работы с пользователями.
 Предоставляет методы для получения информации о пользователях и их балансе.
@@ -32,7 +32,7 @@ console.log(`Текущий пользователь: ${currentUser.name}`);
 
 > **new UsersApi**(`baseUrl`, `token`?): [`UsersApi`](UsersApi.md)
 
-Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L37)
+Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L37)
 
 Создает новый экземпляр базового API.
 
@@ -64,7 +64,7 @@ Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` `readonly` **client**: `AxiosInstance`
 
-Defined in: [api/base.ts:17](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L17)
+Defined in: [api/base.ts:17](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L17)
 
 HTTP клиент для выполнения запросов.
 
@@ -78,7 +78,7 @@ HTTP клиент для выполнения запросов.
 
 > `protected` **baseUrl**: `string`
 
-Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L23)
+Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L23)
 
 Базовый URL API.
 
@@ -92,7 +92,7 @@ Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` **token**: `null` \| `string` = `null`
 
-Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L29)
+Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L29)
 
 Токен авторизации.
 
@@ -106,7 +106,7 @@ Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > **setToken**(`token`): `void`
 
-Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L70)
+Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L70)
 
 Устанавливает токен авторизации для API.
 Этот токен будет автоматически добавляться ко всем запросам.
@@ -133,7 +133,7 @@ Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > **clearToken**(): `void`
 
-Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L80)
+Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L80)
 
 Очищает токен авторизации.
 После вызова этого метода запросы будут выполняться без авторизации.
@@ -152,7 +152,7 @@ Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` **get**\<`T`\>(`url`, `params`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:94](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L94)
+Defined in: [api/base.ts:94](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L94)
 
 Выполняет GET запрос к API.
 
@@ -198,7 +198,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **post**\<`T`\>(`url`, `data`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L112)
+Defined in: [api/base.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L112)
 
 Выполняет POST запрос к API.
 
@@ -244,7 +244,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **put**\<`T`\>(`url`, `data`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:127](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L127)
+Defined in: [api/base.ts:127](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L127)
 
 Выполняет PUT запрос к API.
 
@@ -290,7 +290,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **delete**\<`T`\>(`url`, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:141](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L141)
+Defined in: [api/base.ts:141](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/base.ts#L141)
 
 Выполняет DELETE запрос к API.
 
@@ -330,7 +330,7 @@ URL запроса (относительно базового URL API)
 
 > **getCurrentUser**(): `Promise`\<[`UserMe`](../interfaces/UserMe.md)\>
 
-Defined in: [api/users.ts:63](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/users.ts#L63)
+Defined in: [api/users.ts:63](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/users.ts#L63)
 
 Получает данные текущего авторизованного пользователя.
 
@@ -355,7 +355,7 @@ console.log(`Баланс: ${currentUser.balance}`);
 
 > **getUserBalance**(): `Promise`\<[`UserBalance`](../interfaces/UserBalance.md) \| [`UserBalanceObserver`](../interfaces/UserBalanceObserver.md)[]\>
 
-Defined in: [api/users.ts:89](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/users.ts#L89)
+Defined in: [api/users.ts:89](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/users.ts#L89)
 
 Получает информацию о балансе текущего пользователя.
 В зависимости от роли пользователя, метод может возвращать разные типы данных.
@@ -389,7 +389,7 @@ if (Array.isArray(balance)) {
 
 > **getUsers**(`params`?): `Promise`\<[`UserReadObserver`](../interfaces/UserReadObserver.md)[]\>
 
-Defined in: [api/users.ts:116](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/users.ts#L116)
+Defined in: [api/users.ts:116](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/api/users.ts#L116)
 
 Получает список пользователей с возможностью фильтрации и пагинации.
 Этот метод доступен только для пользователей с ролью Observer.

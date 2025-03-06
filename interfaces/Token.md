@@ -6,7 +6,7 @@
 
 # Interface: Token
 
-Defined in: [types/index.ts:59](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L59)
+Defined in: [types/index.ts:59](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L59)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:59](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **access\_token**: `string`
 
-Defined in: [types/index.ts:60](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L60)
+Defined in: [types/index.ts:60](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L60)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:60](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > `optional` **refresh\_token**: `string`
 
-Defined in: [types/index.ts:61](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L61)
+Defined in: [types/index.ts:61](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L61)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [types/index.ts:61](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **token\_type**: `string`
 
-Defined in: [types/index.ts:62](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L62)
+Defined in: [types/index.ts:62](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L62)

@@ -6,7 +6,7 @@
 
 # Interface: UserBalance
 
-Defined in: [types/index.ts:76](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L76)
+Defined in: [types/index.ts:76](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L76)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [types/index.ts:76](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > `optional` **currency**: `string`
 
-Defined in: [types/index.ts:77](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L77)
+Defined in: [types/index.ts:77](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L77)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types/index.ts:77](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > `optional` **balance**: `number`
 
-Defined in: [types/index.ts:78](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L78)
+Defined in: [types/index.ts:78](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L78)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [types/index.ts:78](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > `optional` **cashback**: `number`
 
-Defined in: [types/index.ts:79](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L79)
+Defined in: [types/index.ts:79](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L79)

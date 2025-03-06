@@ -6,7 +6,7 @@
 
 # Interface: ValidationError
 
-Defined in: [types/index.ts:43](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L43)
+Defined in: [types/index.ts:43](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L43)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:43](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **loc**: (`string` \| `number`)[]
 
-Defined in: [types/index.ts:44](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L44)
+Defined in: [types/index.ts:44](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L44)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:44](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **msg**: `string`
 
-Defined in: [types/index.ts:45](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L45)
+Defined in: [types/index.ts:45](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L45)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [types/index.ts:45](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **type**: `string`
 
-Defined in: [types/index.ts:46](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L46)
+Defined in: [types/index.ts:46](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/4d4a07d9407cb4a686aa9a7d498ca53c3006a843/src/types/index.ts#L46)
