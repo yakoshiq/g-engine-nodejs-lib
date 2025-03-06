@@ -6,7 +6,7 @@
 
 # Interface: UserReadTransactionObserver
 
-Defined in: [types/index.ts:106](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L106)
+Defined in: [types/index.ts:106](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L106)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:106](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **id**: `number`
 
-Defined in: [types/index.ts:107](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L107)
+Defined in: [types/index.ts:107](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L107)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:107](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **login**: `string`
 
-Defined in: [types/index.ts:108](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L108)
+Defined in: [types/index.ts:108](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L108)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types/index.ts:108](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **name**: `string`
 
-Defined in: [types/index.ts:109](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L109)
+Defined in: [types/index.ts:109](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L109)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [types/index.ts:109](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **last\_name**: `string`
 
-Defined in: [types/index.ts:110](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L110)
+Defined in: [types/index.ts:110](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L110)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [types/index.ts:110](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **created\_at**: `string`
 
-Defined in: [types/index.ts:111](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L111)
+Defined in: [types/index.ts:111](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L111)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [types/index.ts:111](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **balance**: `number`
 
-Defined in: [types/index.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L112)
+Defined in: [types/index.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L112)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [types/index.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **cashback**: `number`
 
-Defined in: [types/index.ts:113](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L113)
+Defined in: [types/index.ts:113](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L113)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [types/index.ts:113](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **currency\_version**: `string`
 
-Defined in: [types/index.ts:114](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L114)
+Defined in: [types/index.ts:114](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L114)
 
 ***
 
@@ -78,4 +78,4 @@ Defined in: [types/index.ts:114](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **is\_active**: `boolean`
 
-Defined in: [types/index.ts:115](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L115)
+Defined in: [types/index.ts:115](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L115)

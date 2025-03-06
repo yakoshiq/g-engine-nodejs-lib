@@ -6,7 +6,7 @@
 
 # Class: CurrenciesApi
 
-Defined in: [api/currencies.ts:27](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/currencies.ts#L27)
+Defined in: [api/currencies.ts:27](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/currencies.ts#L27)
 
 API для работы с валютами.
 Предоставляет методы для получения курсов валют из различных источников.
@@ -36,7 +36,7 @@ console.log(`Курс ${currencyRate.data?.pair}: ${currencyRate.data?.currency_
 
 > **new CurrenciesApi**(`baseUrl`, `token`?): [`CurrenciesApi`](CurrenciesApi.md)
 
-Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L37)
+Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L37)
 
 Создает новый экземпляр базового API.
 
@@ -68,7 +68,7 @@ Defined in: [api/base.ts:37](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` `readonly` **client**: `AxiosInstance`
 
-Defined in: [api/base.ts:17](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L17)
+Defined in: [api/base.ts:17](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L17)
 
 HTTP клиент для выполнения запросов.
 
@@ -82,7 +82,7 @@ HTTP клиент для выполнения запросов.
 
 > `protected` **baseUrl**: `string`
 
-Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L23)
+Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L23)
 
 Базовый URL API.
 
@@ -96,7 +96,7 @@ Defined in: [api/base.ts:23](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` **token**: `null` \| `string` = `null`
 
-Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L29)
+Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L29)
 
 Токен авторизации.
 
@@ -110,7 +110,7 @@ Defined in: [api/base.ts:29](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > **setToken**(`token`): `void`
 
-Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L70)
+Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L70)
 
 Устанавливает токен авторизации для API.
 Этот токен будет автоматически добавляться ко всем запросам.
@@ -137,7 +137,7 @@ Defined in: [api/base.ts:70](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > **clearToken**(): `void`
 
-Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L80)
+Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L80)
 
 Очищает токен авторизации.
 После вызова этого метода запросы будут выполняться без авторизации.
@@ -156,7 +156,7 @@ Defined in: [api/base.ts:80](https://github.com/yakoshiq/g-engine-nodejs-lib/blo
 
 > `protected` **get**\<`T`\>(`url`, `params`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:94](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L94)
+Defined in: [api/base.ts:94](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L94)
 
 Выполняет GET запрос к API.
 
@@ -202,7 +202,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **post**\<`T`\>(`url`, `data`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L112)
+Defined in: [api/base.ts:112](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L112)
 
 Выполняет POST запрос к API.
 
@@ -248,7 +248,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **put**\<`T`\>(`url`, `data`?, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:127](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L127)
+Defined in: [api/base.ts:127](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L127)
 
 Выполняет PUT запрос к API.
 
@@ -294,7 +294,7 @@ URL запроса (относительно базового URL API)
 
 > `protected` **delete**\<`T`\>(`url`, `config`?): `Promise`\<`T`\>
 
-Defined in: [api/base.ts:141](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/base.ts#L141)
+Defined in: [api/base.ts:141](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/base.ts#L141)
 
 Выполняет DELETE запрос к API.
 
@@ -334,7 +334,7 @@ URL запроса (относительно базового URL API)
 
 > **getCurrencyRate**(`source`, `pair`): `Promise`\<[`ResponseBase`](../interfaces/ResponseBase.md)\<[`CurrencyRead`](../interfaces/CurrencyRead.md)\>\>
 
-Defined in: [api/currencies.ts:56](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/api/currencies.ts#L56)
+Defined in: [api/currencies.ts:56](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/api/currencies.ts#L56)
 
 Получает актуальный курс валюты из указанного источника.
 

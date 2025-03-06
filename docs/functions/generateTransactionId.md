@@ -8,7 +8,7 @@
 
 > **generateTransactionId**(): `string`
 
-Defined in: [utils/transaction.ts:19](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/utils/transaction.ts#L19)
+Defined in: [utils/transaction.ts:19](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/utils/transaction.ts#L19)
 
 Генерирует уникальный идентификатор транзакции в формате UUID v4.
 UUID v4 формат: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx, где x - любая шестнадцатеричная цифра,

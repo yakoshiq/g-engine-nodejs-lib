@@ -7,8 +7,32 @@
 Неофициальный TypeScript клиент для работы с G-Engine API.
 
 [![Тестирование](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml/badge.svg)](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml)
+[![Документация](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/docs.yml/badge.svg)](https://yakoshiq.github.io/g-engine-nodejs-lib/)
 
 Официальный сайт проекта: [G-Engine](https://g-engine.net/)
+
+## Документация
+
+Полная документация API доступна на [GitHub Pages](https://yakoshiq.github.io/g-engine-nodejs-lib/).
+
+### Разделы документации
+
+- [API Reference](https://yakoshiq.github.io/g-engine-nodejs-lib/modules.html) - полное описание API библиотеки
+- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes.html) - документация по классам
+- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/interfaces.html) - описание типов и интерфейсов
+
+### Локальная генерация документации
+
+```bash
+# Сгенерировать документацию
+npm run docs
+
+# Запустить документацию локально
+npm run docs:serve
+
+# Автоматическая генерация при изменениях
+npm run docs:watch
+```
 
 ## Установка
 
@@ -74,21 +98,13 @@ const transactionId = generateTransactionId();
 console.log(`Сгенерированный transaction_id: ${transactionId}`);
 
 // Создание и верификация платежа
-const verifyResult = await client.payments.verifyPayment({
+const paymentVerification = await client.payments.verifyPayment({
   transaction_id: transactionId,
   service_id: 1,
-  account: 'user-account',
+  account: 'user123',
   amount: 100,
-  currency: 'RUB',
+  currency: 'USD',
 });
-
-// Выполнение платежа
-const executeResult = await client.payments.executePayment({
-  transaction_id: transactionId,
-});
-
-// Получение статуса платежа
-const paymentStatus = await client.payments.getPaymentStatus(transactionId);
 ```
 
 ### Работа с транзакциями
@@ -149,52 +165,18 @@ import {
 
 ## Разработка
 
-### Настройка окружения
-
-Для разработки библиотеки необходимо установить зависимости:
-
 ```bash
+# Установка зависимостей
 npm install
-```
 
-### Тестирование
-
-Библиотека покрыта модульными тестами с использованием Jest. Для запуска тестов выполните:
-
-```bash
+# Запуск тестов
 npm test
-```
 
-Для запуска тестов в режиме наблюдения (автоматический перезапуск при изменении файлов):
-
-```bash
-npm run test:watch
-```
-
-Для генерации отчета о покрытии кода тестами:
-
-```bash
-npm run test:coverage
-```
-
-Тесты автоматически запускаются в GitHub Actions при каждом пуше и pull request.
-
-### Линтинг и форматирование
-
-Проект использует ESLint и Prettier для обеспечения качества кода:
-
-```bash
-# Проверка кода линтером
+# Запуск линтера
 npm run lint
 
-# Автоматическое исправление проблем линтера
-npm run lint:fix
-
-# Форматирование кода
-npm run format
-
-# Проверка форматирования
-npm run format:check
+# Сборка проекта
+npm run build
 ```
 
 ## Лицензия

@@ -16,5 +16,20 @@
   "navigationLinks": {
     "GitHub": "https://github.com/yakoshiq/g-engine-nodejs-lib",
     "G-Engine": "https://g-engine.net/"
+  },
+  "sidebarLinks": {
+    "API Reference": "modules.html",
+    "Classes": "classes.html",
+    "Interfaces": "interfaces.html"
+  },
+  "navigation": {
+    "includeCategories": true,
+    "includeGroups": true
+  },
+  "visibilityFilters": {
+    "protected": true,
+    "private": false,
+    "inherited": true,
+    "external": false
   }
 }

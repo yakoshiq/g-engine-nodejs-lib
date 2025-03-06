@@ -6,7 +6,7 @@
 
 # Interface: StoreDTO
 
-Defined in: [types/index.ts:178](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L178)
+Defined in: [types/index.ts:178](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L178)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:178](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **external\_id**: `number`
 
-Defined in: [types/index.ts:179](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L179)
+Defined in: [types/index.ts:179](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L179)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:179](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **name**: `string`
 
-Defined in: [types/index.ts:180](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L180)
+Defined in: [types/index.ts:180](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L180)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types/index.ts:180](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **deduction**: `number`
 
-Defined in: [types/index.ts:181](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L181)
+Defined in: [types/index.ts:181](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L181)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [types/index.ts:181](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > `optional` **system\_store**: [`SystemStoreBase`](SystemStoreBase.md)
 
-Defined in: [types/index.ts:182](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L182)
+Defined in: [types/index.ts:182](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L182)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [types/index.ts:182](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **id**: `number`
 
-Defined in: [types/index.ts:183](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L183)
+Defined in: [types/index.ts:183](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L183)

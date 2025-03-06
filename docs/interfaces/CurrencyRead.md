@@ -6,7 +6,7 @@
 
 # Interface: CurrencyRead
 
-Defined in: [types/index.ts:209](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L209)
+Defined in: [types/index.ts:209](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L209)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:209](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **source**: `string`
 
-Defined in: [types/index.ts:210](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L210)
+Defined in: [types/index.ts:210](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L210)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types/index.ts:210](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **pair**: `string`
 
-Defined in: [types/index.ts:211](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L211)
+Defined in: [types/index.ts:211](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L211)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [types/index.ts:211](https://github.com/yakoshiq/g-engine-nodejs-lib
 
 > **currency\_rate**: `string`
 
-Defined in: [types/index.ts:212](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L212)
+Defined in: [types/index.ts:212](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L212)

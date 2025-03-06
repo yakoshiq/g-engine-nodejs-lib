@@ -6,7 +6,7 @@
 
 # Enumeration: CurrencyPair
 
-Defined in: [types/index.ts:31](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L31)
+Defined in: [types/index.ts:31](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L31)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [types/index.ts:31](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **USD\_RUB**: `"USD:RUB"`
 
-Defined in: [types/index.ts:32](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L32)
+Defined in: [types/index.ts:32](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L32)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [types/index.ts:32](https://github.com/yakoshiq/g-engine-nodejs-lib/
 
 > **EUR\_RUB**: `"EUR:RUB"`
 
-Defined in: [types/index.ts:33](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/63328d85b5989256f3bd1f6ff7feb24d5e5a10a6/src/types/index.ts#L33)
+Defined in: [types/index.ts:33](https://github.com/yakoshiq/g-engine-nodejs-lib/blob/6b4ec644f458bf28039e0209e5a91bd0ec704446/src/types/index.ts#L33)
