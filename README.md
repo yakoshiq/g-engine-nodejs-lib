@@ -1,6 +1,6 @@
 # G-Engine API Client
 
-TypeScript клиент для работы с G-Engine API.
+Неофициальный TypeScript клиент для работы с G-Engine API.
 
 [![Тестирование](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml/badge.svg)](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml)
 
