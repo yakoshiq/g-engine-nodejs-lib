@@ -19,7 +19,8 @@
     "docs": "typedoc",
     "docs:watch": "typedoc --watch",
     "docs:serve": "npx serve docs",
-    "docs:check": "typedoc --emit none"
+    "docs:check": "typedoc --emit none",
+    "docs:json": "typedoc --json docs/api.json"
   },
   "keywords": [
     "g-engine",

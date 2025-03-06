@@ -81,6 +81,10 @@ jobs:
       - name: Create .nojekyll file
         run: touch docs/.nojekyll
 
+      # Генерируем JSON-файл с полным описанием API
+      - name: Generate API JSON
+        run: npm run docs:json
+
       # Создаем файл с версией и датой обновления
       - name: Add version info
         run: |
