@@ -1,6 +1,6 @@
 # G-Engine API Client
 
-Неофициальный TypeScript клиент для работы с G-Engine API.
+TypeScript клиент для работы с G-Engine API.
 
 [![Тестирование](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml/badge.svg)](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml)
 [![Документация](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/docs.yml/badge.svg)](https://yakoshiq.github.io/g-engine-nodejs-lib/)
@@ -11,11 +11,11 @@
 
 Полная документация API доступна на [GitHub Pages](https://yakoshiq.github.io/g-engine-nodejs-lib/).
 
-### Разделы документации
+### Основные разделы
 
-- [API Reference](https://yakoshiq.github.io/g-engine-nodejs-lib/modules.html) - полное описание API библиотеки
-- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes.html) - документация по классам
-- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/interfaces.html) - описание типов и интерфейсов
+- [Модули](https://yakoshiq.github.io/g-engine-nodejs-lib/index.html) - главная страница документации
+- [Классы](https://yakoshiq.github.io/g-engine-nodejs-lib/classes/GEngineClient.html) - документация по классам
+- [Интерфейсы](https://yakoshiq.github.io/g-engine-nodejs-lib/types/Token.html) - описание типов и интерфейсов
 
 ### Локальная генерация документации
 
