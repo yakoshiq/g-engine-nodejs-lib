@@ -15,7 +15,10 @@
     "postversion": "git push && git push --tags",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "docs": "typedoc",
+    "docs:watch": "typedoc --watch",
+    "docs:serve": "npx serve docs"
   },
   "keywords": [
     "g-engine",
@@ -51,6 +54,8 @@
     "prettier": "^3.5.2",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
+    "typedoc": "^0.27.9",
+    "typedoc-plugin-markdown": "^4.4.2",
     "typescript": "^5.8.2"
   },
   "files": [

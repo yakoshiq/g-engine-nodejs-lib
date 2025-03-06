@@ -1,0 +1,20 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["./src/index.ts"],
+  "out": "docs",
+  "name": "G-Engine API Documentation",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "plugin": ["typedoc-plugin-markdown"],
+  "theme": "default",
+  "categorizeByGroup": true,
+  "searchInComments": true,
+  "sort": ["source-order"],
+  "navigationLinks": {
+    "GitHub": "https://github.com/yakoshiq/g-engine-nodejs-lib",
+    "G-Engine": "https://g-engine.net/"
+  }
+}

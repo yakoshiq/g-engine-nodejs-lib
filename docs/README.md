@@ -1,9 +1,12 @@
+**G-Engine API Documentation v0.1.1**
+
+***
+
 # G-Engine API Client
 
 Неофициальный TypeScript клиент для работы с G-Engine API.
 
 [![Тестирование](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml/badge.svg)](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/tests.yml)
-[![Документация](https://github.com/yakoshiq/g-engine-nodejs-lib/actions/workflows/docs.yml/badge.svg)](https://yakoshiq.github.io/g-engine-nodejs-lib/)
 
 Официальный сайт проекта: [G-Engine](https://g-engine.net/)
 
@@ -71,13 +74,21 @@ const transactionId = generateTransactionId();
 console.log(`Сгенерированный transaction_id: ${transactionId}`);
 
 // Создание и верификация платежа
-const paymentVerification = await client.payments.verifyPayment({
+const verifyResult = await client.payments.verifyPayment({
   transaction_id: transactionId,
   service_id: 1,
-  account: 'user123',
+  account: 'user-account',
   amount: 100,
-  currency: 'USD',
+  currency: 'RUB',
 });
+
+// Выполнение платежа
+const executeResult = await client.payments.executePayment({
+  transaction_id: transactionId,
+});
+
+// Получение статуса платежа
+const paymentStatus = await client.payments.getPaymentStatus(transactionId);
 ```
 
 ### Работа с транзакциями
@@ -136,37 +147,54 @@ import {
 } from 'g-engine-api';
 ```
 
-## Документация
-
-Полная документация API доступна на [GitHub Pages](https://yakoshiq.github.io/g-engine-nodejs-lib/).
-
-### Локальная генерация документации
-
-```bash
-# Сгенерировать документацию
-npm run docs
-
-# Запустить документацию локально
-npm run docs:serve
-
-# Автоматическая генерация при изменениях
-npm run docs:watch
-```
-
 ## Разработка
 
+### Настройка окружения
+
+Для разработки библиотеки необходимо установить зависимости:
+
 ```bash
-# Установка зависимостей
 npm install
+```
 
-# Запуск тестов
+### Тестирование
+
+Библиотека покрыта модульными тестами с использованием Jest. Для запуска тестов выполните:
+
+```bash
 npm test
+```
 
-# Запуск линтера
+Для запуска тестов в режиме наблюдения (автоматический перезапуск при изменении файлов):
+
+```bash
+npm run test:watch
+```
+
+Для генерации отчета о покрытии кода тестами:
+
+```bash
+npm run test:coverage
+```
+
+Тесты автоматически запускаются в GitHub Actions при каждом пуше и pull request.
+
+### Линтинг и форматирование
+
+Проект использует ESLint и Prettier для обеспечения качества кода:
+
+```bash
+# Проверка кода линтером
 npm run lint
 
-# Сборка проекта
-npm run build
+# Автоматическое исправление проблем линтера
+npm run lint:fix
+
+# Форматирование кода
+npm run format
+
+# Проверка форматирования
+npm run format:check
 ```
 
 ## Лицензия
